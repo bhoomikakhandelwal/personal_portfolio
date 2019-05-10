@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Metas Page details-->
+<title>Bhoomika Khandelwal</title>
+<link rel="icon" href="images/favicon.png"  type="image/png"> 
+<meta name="description" content="OnePage Resume Portfolio">
+<meta name="author" content="">
+<!-- Mobile Specific Metas-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--main style-->
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+<!--google font style-->
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+<!--font-family: 'Metrophobic', serif;-->
+<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic,600italic' rel='stylesheet' type='text/css'> 
+<!--font-family: 'Open Sans', sans-serif;-->
+<!-- font icon css style-->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<style>
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+
+button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color:black;
+  color: white;
+  margin-left:625px;
+}
+
+.next {
+  background-color: black;
+  color: white;
+}
+
+ 
+     .box{
+                    position: relative;
+                    min-height: 1px;
+    margin: 20px;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #ada5ad;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    float: left;
+    text-align: center;
+    margin-top: -15px;
+    height: 345px;
+    width: 380px;
+         margin-top: 35px;
+         cursor: pointer;
+            }
+           
+            .text{
+                   padding: 22px;
+    color: #5b4c5c;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    font-family:  Crimson Text;
+        font-style:italic;
+                line-height: 22px;
+            }
+          
+p{
+  text-align: justify;
+  padding-left: 5px;
+}
+
+h6{
+  font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    padding-bottom: 33px;
+    margin: 0px;
+    color:#888089;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top:140px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content-1,.modal-content-2,.modal-content-3,.modal-content-4,.modal-content-5,.modal-content-6 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: 80%;
+}
+
+/* Add Animation */
+.modal-content-1,.modal-content-2,.modal-content-3,.modal-content-4,.modal-content-5,.modal-content-6 #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.contact-info {
+    margin: 4.8rem auto 0;
+    font-family: "poppins-regular", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.row {
+    width: 94%;
+    max-width: 1140px;
+}
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+
+
+.col-four{
+    width: 33.33333%;
+    float: left;
+}
+
+
+.contact-info .icon {
+    margin-bottom: 2.1rem;
+}
+.contact-info .icon i {
+    font-size: 3.2rem;
+    color: black;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 90px;
+    right: 319px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content-1,.modal-content-2,.modal-content-3,.modal-content-4,.modal-content-5,.modal-content-6 {
+        width: 90%;
+        height: 60%;
+    }
+    .modal-content-1,.modal-content-2,.modal-content-3,.modal-content-4,.modal-content-5,.modal-content-6 {display:none;}  
+    .close{
+      right:20px;
+    }
+    .previous{
+      margin-left: 160px;
+    }
+    
+}  
+
+</style>
+
+</head>
+<body onLoad="load()" onUnload="GUnload()">
+
+<div id="preloader">
+	<div id="status"></div>
+</div>
+
+<div class="wrapper noGap" id="wrapper">
+
+<!--Header start -->
+<header>
+  	<!--menu start-->
+    <div class="menu">
+    <a href="#" class="nav-icon" id="nav-show"><i class="fa fa-bars"></i></a>
+      <div class="navbar-wrapper">
+        <div class="container">
+          <div class="navwrapper">
+            <div class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+              	<!--<div class="logo">logo</div> -->
+                <div class="navArea"><a href="#" class="closeMenu"><i class="fa fa-times"></i></a>
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                     <!-- <a class="navbar-brand" href="#">Menu</a>  --></div>
+                    <div class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="menuItem active"><a href="#wrapper">Home</a></li>
+                        <li class="menuItem"><a href="#aboutus">About Me</a></li>
+                        <li class="menuItem"><a href="#skillset">Skills</a></li>
+                        <li class="menuItem"><a href="#education">Education</a></li>
+                        <li class="menuItem"><a href="#experience">Projects</a></li>
+                        <li class="menuItem"><a href="#ourwork">Portfolio</a></li>
+                        <li class="menuItem"><a href="#contact">Contact</a></li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Navbar -->
+        </div>
+      </div>
+    </div>
+    <!--menu end--> 
+    <!--banner start-->
+    <div class="banner" id="banner">
+    <div class="bannerText">
+       <h1>Hello, World.</h1>
+        <h1>I'm Bhoomika Khandelwal</h1>
+        <h3>Design &amp; Build Beautiful Crafted Web Experiences</h3>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd slides-container" style="height:100%"> 
+        <!--background slide show start-->
+        <div class="slide"> 
+          <img src="images/header-image/intro-bg.jpg" alt="image01"> </div>
+        <div class="slide"> 
+          <img src="images/header-image/02-small.jpg" alt="image01"> </div>
+        <!--background slide show end--> 
+      </div>
+    </div>
+    <!--banner end--> 
+    
+  </header>
+  <!--Header end -->
+  
+ <!--about us start-->
+  <section class="aboutus" id="aboutus">
+    <div class="container">
+      <div class="row">
+       <div class="col-md-12">
+      	<div class="heading">
+        <h2>About me</h2>
+        <h3>A small introduction about my self</h3>        
+      </div>
+      </div> 
+       </div> 
+      <div class="row">
+      <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right media"><img src="images/my.jpeg" alt=""></div>
+      	<div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left media">
+        	<h5>Bhoomika Khandelwal</h5>
+            
+            <p>My journey as a Web Designer start from the age of 15 when attending my high school for Multimedia and Web Technology. After that I got Bachelor and pursuing a masters in Computer Applications. This has helped me to widen my range of knowledge and gather experiences through various disciplines, such as front-end and back-end development. I have designed websites in the school and in the undergraduate and postgraduate.</p>
+<p>My specialty is in front-end developers creating websites. My interests, however, beyond the web is I love doing sketches and hangouts to the new places. </p>
+<p><a role="button" class="btn btn-primary btn-lg" href="CV.pdf" download target="_blank">Download Resume</a></p>
+        </div>
+      	
+      </div>     
+    </div>    
+  </section>
+  <!--about us end--> 
+  <!--Skillset start -->
+  <section id="skillset" class="skillset">
+  	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+               <div class="heading">
+                <h2>Skills &amp; Expertice</h2>
+                <h3>I can say i’m quite good at</h3>        
+              </div>
+            </div>
+            <div class="col-md-12">
+            	<div class="col-md-6 col-sm-12 media">
+                	<p>From my school level when I opt for the Multimedia and Web Technology I got interested in this so I start learning it more and done some projects in my school level. And getting more on this I have chosen for BCA so that I can develop my skills and get to know more languages and platform to work on it. So with this I got interested in the front end development which includes the HTML5, CSS, javascript, PHP, bootstrap. I am able to design a website with the given requirements. I am also having a some knowledge regarding angularJs which is the advanced technology nodes. Apart from the front end development and I also have a some knowledge of other languages like C, C++, Java (Core).</p>
+                </div>
+            	<div class="col-md-6 col-sm-12">                
+                <div class="skillbar clearfix " data-percent="94%">
+                    <div class="skillbar-title"><span>Web design</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->
+                
+                 <div class="skillbar clearfix " data-percent="95%">
+                    <div class="skillbar-title"><span>HTML / CSS</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="75%">
+                    <div class="skillbar-title"><span>php</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->    
+                
+                   <div class="skillbar clearfix " data-percent="80%">
+                    <div class="skillbar-title"><span>javascript</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="60%">
+                    <div class="skillbar-title"><span>bootstrap</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent"></div>
+                </div> <!-- End Skill Bar -->
+                
+               
+                
+                            
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--Skillset end -->
+    <!--Education & diploma start -->
+  <section id="education" class="educationdiploma">
+  	<div class="container">
+        <div class="heading">
+        <h2>Education</h2>        
+      </div>
+        
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	July, 2017<br>April, 2019
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>Master of Computer Applications</h4>
+                <h5>Vellore Institute Of Technology</h5>
+                <p>I am pursuing MCA from this University which is a two year course. During my masters I have done many projects and face many challenges regarding this but I overcome with it. I get to know many of the new technologies and also many new frameworks which helps with my projects. </p>
+            </div>
+        </div>
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	July, 2014<br>May, 2017
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>Bachelor of Computer Applications</h4>
+                <h5>Jaipur National University</h5>
+                <p>I have completed my undergraduate course in BCA, which is a three year course. During my undergraduate as everything was a new beginning for me so I get to know many of the languages and how to work on it. I have also done many projects in my undergraduate which has gotten cleared with my basics and also get to know my interest regarding the particular framework and language.</p>
+            </div>
+        </div>
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	SSC-March, 2012<br>HSC-March, 2014
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>SSC and HSC</h4>
+                <h5>Cambridge Court High School</h5>
+                <p>I have completed my SSC and HSC from this school. As in the SSC I get to learn all the basic subjects which followed by the CBSE. Than in my HSC I have opted for the commerce with Multimedia and Web Technology. As I got interested in the Web technology so I start learning that more and done some of the projects at my school level which helps me to build my interest more. </p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--Education & diploma end -->
+  
+  <!--Work Experties start -->
+  <section id="experience" class="myexperties">
+  	<div class="container">
+        <div class="heading">
+        <h2>Projects</h2>
+        <h3>My previous projects in front-end developemnt</h3>        
+      </div>
+        
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	Feb, 2018<br>Mar, 2018  </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>Blood Bank Management System</h4>
+                <h5>Master of Computer Applcations</h5>
+                <p>Blood Bank Management System is a browser based system that is designed to store, process, retrieve and analyze information concerned with the administrative within a blood bank. This project aims at maintaining all the information pertaining to blood donors, different blood groups available in each blood bank and helps them manage in a better way. The aim is to provide transparency in this field, make the process of obtaining blood from a blood bank hassle free and corruption free and make the system of blood bank management effective. It is developed in a manner that is easily manageable, time saving and relieving one from manual works. The requirement of the blood has to be requested and we supply the information about the donor. The donors can update their status, whether they are available or not.</p>
+            </div>
+        </div>
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	 March, 2018 End in <br>
+                	 March, 2018
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>E-Commerce Management System</h4>
+                <h5>Master of Computer Applcations</h5>
+                <p>The business-to-consumer aspect of electronic commerce (e-commerce) is the most visible business use of the World Wide Web. The primary goal of an e-commerce site is to sell goods and services online. This project deals with developing an e-commerce website for Online Book Sale, Movies, Games and Animie. It provides the user with a catalog of different services available for purchase in the store. In this project we are having the admin, seller and the student login where sellers can add and delete. The student can buy the particular items which he/she wants to purchase by login into the system. This is a project with the objective to develop a basic website where a student is provided with services and also to know about the technologies used to develop such an application.</p>
+            </div>
+        </div>
+        <div class="row media">
+        	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            	<div class="expertiesico">
+                	March, 2017<br>April, 2017
+                </div>
+            </div>
+        	<div class="expertiesdesc col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            	<h4>Online Event Booking System</h4>
+                <h5>Bachelor of Computer Applications</h5>
+                <p>This is an Online Event Management that serves the functionality of an event manager. The project provides most of the basic functionality required for an event. It allows the user to select from a list of event types. Once the user enters an event type ex (Wedding, Birthday party, corporate party, etc.), the system then allows the user to select the date and time of the event, place and the event equipment’s (like Hotel selection, menu selection, etc.). All this data is logged in the database and the user is given a receipt number for his booking. This data is then sent to the administrator (website owner) and they may interact with the client as per his requirements and his contact data stored in the database. Our main objective of the project is to make and provide an ideal software solution to book-events, to cancel events, to protect user data and to save the valuable time of the user.
+                  </p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--Work Experties end -->
+
+  
+  <!--portfolio start-->
+	<section class="protfolio" id="ourwork">
+    <div class="container">
+        <div class="heading">
+            <h2>Portfolio</h2>
+            <h3>What I have done in my academic career</h3>            
+        </div>
+    </div>
+    
+<div class="container1">
+        <div class="box"><img id="myImg1" src="images/projects/Events/event1.png" alt="Trolltunga, Norway" width="396px" height="270px" >
+        <div class="text">Online Event Booking System</div></div>
+            <!-- The Modal  --> 
+       <div id="myModal1" class="modal">
+              <span class="close">&times;</span>
+  <img class="modal-content-1" id="img01" src="images/projects/Events/event1.png">
+  <img class="modal-content-1" id="img01" src="images/projects/Events/event2.png">
+  <img class="modal-content-1" id="img01" src="images/projects/Events/event3.png">
+  <img class="modal-content-1" id="img01" src="images/projects/Events/event4.png">
+  <img class="modal-content-1" id="img01" src="images/projects/Events/event5.png">
+  <img class="modal-content-1" id="img01" src="images/projects/Events/event6.png">
+
+  <button class="previous" onclick="plusDivs(-1, 'modal-content-1')">&#10094;</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="next" onclick="plusDivs(1, 'modal-content-1')">&#10095;</button>
+</div>
+  
+   <div class="box"><img id="myImg2" src="images/projects/BloodBank/bloodbank1.png" alt="Trolltunga, Norway" width="396px" height="270px">
+                            <div class="text">Blood Bank Management System</div></div>
+
+            <div id="myModal2" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank1.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank2.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank3.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank4.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank5.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank6.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank7.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank8.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank9.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank10.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank11.png">
+              <img class="modal-content-2" id="img02" src="images/projects/BloodBank/bloodbank12.png">
+  <button class="previous" onclick="plusDivs(-1, 'modal-content-2')">&#10094;</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="next" onclick="plusDivs(1, 'modal-content-2')">&#10095;</button>
+</div>
+
+  
+   <div class="box"><img id="myImg3" src="images/projects/Ecommerce/e1.png" alt="Trolltunga, Norway" width="396px" height="270px">
+                            <div class="text">E-Commerce Managment System</div></div>
+            <!-- The Modal -->
+            <div id="myModal3" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e1.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e2.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e3.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e4.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e5.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e6.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e7.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e8.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e9.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e10.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e11.png">
+              <img class="modal-content-3" id="img03" src="images/projects/Ecommerce/e12.png">
+              
+  <button class="previous" onclick="plusDivs(-1, 'modal-content-3')">&#10094;</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="next" onclick="plusDivs(1, 'modal-content-3')">&#10095;</button>
+</div>
+
+ <div class="box"><img id="myImg4" src="images/projects/HomeDecor/homedecor1.png" alt="Trolltunga, Norway" width="396px" height="270px" >
+        <div class="text">Home Decor</div></div>
+            <!-- The Modal -->
+       <div id="myModal4" class="modal">
+              <span class="close">&times;</span>
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor1.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor2.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor3.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor4.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor5.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor6.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor7.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor8.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor9.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor10.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor11.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor12.png">
+  <img class="modal-content-4" id="img04" src="images/projects/HomeDecor/homedecor13.png">  
+
+  <button class="previous" onclick="plusDivs(-1, 'modal-content-4')">&#10094;</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="next" onclick="plusDivs(1, 'modal-content-4')">&#10095;</button>
+</div>
+
+  <div class="box"><img id="myImg5" src="images/projects/OnePage/fb.png" alt="Trolltunga, Norway" width="396px" height="270px" >
+        <div class="text">One Page Websites</div></div>
+            <!-- The Modal -->
+       <div id="myModal5" class="modal">
+              <span class="close">&times;</span>
+  <img class="modal-content-5" id="img05" src="images/projects/OnePage/fb.png">
+  <img class="modal-content-5" id="img05" src="images/projects/OnePage/gmail.png">
+  <img class="modal-content-5" id="img05" src="images/projects/OnePage/linkedin.png">
+  <img class="modal-content-5" id="img05" src="images/projects/OnePage/twitter.png">
+
+  <button class="previous" onclick="plusDivs(-1, 'modal-content-5')">&#10094;</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="next" onclick="plusDivs(1, 'modal-content-5')">&#10095;</button>
+</div>
+ 
+ <div class="box"><img id="myImg6" src="images/projects/MagnumIcecream/magnum1.png" alt="Trolltunga, Norway" width="396px" height="270px" >
+        <div class="text">Magnum Icecream</div></div>
+            <!-- The Modal -->
+       <div id="myModal6" class="modal">
+              <span class="close">&times;</span>
+  <img class="modal-content-6" id="img06" src="images/projects/MagnumIcecream/magnum1.png">
+  <img class="modal-content-6" id="img06" src="images/projects/MagnumIcecream/magnum2.png">
+  <img class="modal-content-6" id="img06" src="images/projects/MagnumIcecream/magnum3.png">
+  <img class="modal-content-6" id="img06" src="images/projects/MagnumIcecream/magnum4.png">
+  <img class="modal-content-6" id="img06" src="images/projects/MagnumIcecream/magnum5.png">
+  <img class="modal-content-6" id="img06" src="images/projects/MagnumIcecream/magnum6.png">
+
+  <button class="previous" onclick="plusDivs(-1, 'modal-content-6')">&#10094;</button> &nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="next" onclick="plusDivs(1, 'modal-content-6')">&#10095;</button>
+</div>  
+</div>
+<script>
+ // Get the modal
+    var modal1 = document.getElementById('myModal1');
+    var modal2 = document.getElementById('myModal2');
+    var modal3 = document.getElementById('myModal3');
+    var modal4 = document.getElementById('myModal4');
+    var modal5 = document.getElementById('myModal5');
+    var modal6 = document.getElementById('myModal6');
+
+    // Get the image and insert it inside the modal 
+    var img1 = document.getElementById('myImg1');
+    var img2 = document.getElementById('myImg2');
+    var img3 = document.getElementById('myImg3');
+    var img4 = document.getElementById('myImg4');
+    var img5 = document.getElementById('myImg5');
+    var img6 = document.getElementById('myImg6');
+
+    var modalImg1 = document.getElementById("img01");
+    var modalImg2 = document.getElementById("img02");
+    var modalImg3 = document.getElementById("img03");
+    var modalImg4 = document.getElementById("img04");
+    var modalImg5 = document.getElementById("img05");
+    var modalImg6 = document.getElementById("img06");
+
+    var slideIndex = 1;
+    // showDivs(slideIndex, "modal-content-1");
+
+    function plusDivs(n, className) {
+      showDivs(slideIndex += n, className);
+    }
+
+    function showDivs(n, className) {
+      var i;
+      var x = document.getElementsByClassName(className);
+      //console.log("####!!!! Length X -> ", x.length)
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+
+    var _this = this;
+    img1.onclick = function () {
+      //console.log("####!!!! onclick -> ")
+      modal1.style.display = "block";
+      modalImg1.src = this.src;
+      slideIndex = 1;
+      _this.showDivs(slideIndex, "modal-content-1");
+    }
+
+    img2.onclick = function () {
+      //console.log("####!!!! onclick -> ")
+      modal2.style.display = "block";
+      modalImg2.src = this.src;
+      slideIndex = 1;
+      _this.showDivs(slideIndex, "modal-content-2");
+    }
+
+    img3.onclick = function () {
+      //console.log("####!!!! onclick -> ")
+      modal3.style.display = "block";
+      modalImg3.src = this.src;
+      slideIndex = 1;
+      _this.showDivs(slideIndex, "modal-content-3");
+    }
+
+    img4.onclick = function () {
+      //console.log("####!!!! onclick -> ")
+      modal4.style.display = "block";
+      modalImg4.src = this.src;
+      slideIndex = 1;
+      _this.showDivs(slideIndex, "modal-content-4");
+    }
+
+    img5.onclick = function () {
+      //console.log("####!!!! onclick -> ")
+      modal5.style.display = "block";
+      modalImg5.src = this.src;
+      slideIndex = 1;
+      _this.showDivs(slideIndex, "modal-content-5");
+    }
+
+    img6.onclick = function () {
+      //console.log("####!!!! onclick -> ")
+      modal6.style.display = "block";
+      modalImg6.src = this.src;
+      slideIndex = 1;
+      _this.showDivs(slideIndex, "modal-content-6");
+    }
+
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("close")[0];
+    var span2 = document.getElementsByClassName("close")[1];
+    var span3 = document.getElementsByClassName("close")[2];
+    var span4 = document.getElementsByClassName("close")[3];
+    var span5 = document.getElementsByClassName("close")[4];
+    var span6 = document.getElementsByClassName("close")[5];
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function () {
+      modal1.style.display = "none";
+    }
+    span2.onclick = function () {
+      modal2.style.display = "none";
+    }
+    span3.onclick = function () {
+      modal3.style.display = "none";
+    }
+    span4.onclick = function () {
+      modal4.style.display = "none";
+    }
+    span5.onclick = function () {
+      modal5.style.display = "none";
+    }
+    span6.onclick = function () {
+      modal6.style.display = "none";
+    }
+
+</script>
+    
+    
+    
+  </section>
+  <!--portfolio end-->   
+  
+  <!--contact start-->
+  <section class="contact" id="contact">
+    
+      <div class="heading" style="padding-top:75px; padding-bottom: 0px">
+        <h2>Contact</h2>
+               
+      </div>
+
+   
+    <div class="row contact-info">
+
+      <div class="col-four tab-full">
+
+        <div class="icon">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </div>
+
+        <h5>Address</h5>
+
+        <h6>
+           134, Shiv Colony, <br>
+          Hari Marg, Tonk Road<br>
+           Jaipur (Rajasthan)<br>
+           302015
+        </h6>
+
+      </div>
+      
+      <div class="col-four tab-full">
+
+        <div class="icon">
+          <a href="mailto:bhoomikakhandelwal4@gmail.com"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+
+        <h5>Email Me At</h5>
+
+        <h6><a href="mailto:bhoomikakhandelwal4@gmail.com" style="color:#888089"> bhoomikakhandelwal4 @gmail.com</a><br>
+      
+        </h6>
+
+      </div>
+
+      <div class="col-four tab-full">
+
+        <div class="icon">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+        </div>
+
+        <h5>Call Me At</h5>
+
+        <h6>Mobile (1): <a href="tel:+919530027698" style="color:#888089">(+91) 9530027698 </a><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           (2): <a href="tel:+919079699854" style="color:#888089">(+91) 9079699854 </a>
+        </h6>
+
+      </div>
+      
+    </div> <!-- /contact-info -->
+
+
+      </section>
+  
+  <!--contact end--> 
+  
+  <!--footer start-->
+  <section class="footer" id="footer">
+    <div class="container">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/bhoomika-khandelwal-89512516b" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://www.facebook.com/"  target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/bhumi.04/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+      </ul>
+    </div>
+    <p class="text-center"><a href="#wrapper" class="gototop"><i class="fa fa-chevron-up fa-2"></i></a></p>
+  </section>
+  <!--footer end-->     
+  </div>
+<!--wrapper end--> 
+
+<!--modernizr js--> 
+<script type="text/javascript" src="js/modernizr.custom.26633.js"></script> 
+<!--jquary min js--> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!--for placeholder jquery--> 
+<script type="text/javascript" src="js/jquery.placeholder.js"></script> 
+
+<!--for header jquery--> 
+<script type="text/javascript" src="js/stickUp.js"></script> 
+<script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+	$('.navbar-wrapper').stickUp({
+		parts: {
+		  0: 'banner',
+		  1: 'aboutus',
+		  2: 'skillset',
+		  3: 'education',
+		  4: 'experience',
+		  5: 'ourwork',
+		  6: 'contact'
+		},
+		itemClass: 'menuItem',
+    itemHover: 'active',
+		topMargin: 'auto'
+		});
+	});
+	
+
+});
+</script>
+<script>
+	$('#banner').superslides({
+	  animation: 'fade',
+	  play: 5000
+	});
+</script>  
+
+<!--for portfolio jquery--> 
+<script src="js/jquery.isotope.js" type="text/javascript"></script> 
+<link type="text/css" rel="stylesheet" id="theme" href="css/jquery-ui-1.8.16.custom.css">
+<link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
+<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script> 
+<script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script> 
+
+<!--contact form js--> 
+<script type="text/javascript" src="js/jquery.contact.js"></script> 
+<script src="js/jquery.easing.js"></script> 
+<script src="js/jquery.mousewheel.js"></script> 
+<script defer src="js/slideroption.js"></script> 
+
+<!--for theme custom jquery--> 
+<script src="js/custom.js"></script>
+
+</body>
+</html>
